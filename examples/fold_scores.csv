@@ -1,0 +1,7 @@
+fold,model,score
+0,baseline,0.71
+0,calibrated,0.76
+1,baseline,0.69
+1,calibrated,0.74
+2,baseline,0.73
+2,calibrated,0.72

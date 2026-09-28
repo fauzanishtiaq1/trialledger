@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: TrialLedger
+message: "If TrialLedger supports your work, please cite it."
+type: software
+authors:
+  - family-names: Ishtiaq
+    given-names: Fauzan
+version: 0.1.0
+date-released: 2026-09-28
+license: MIT
+repository-code: https://github.com/fauzanishtiaq1/trialledger
+abstract: Offline validation, paired uncertainty, and auditable reports for aligned machine-learning predictions.

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+dist/
+build/
+
+benchmarks/ci-results.json
+.tmp-dist-install/
+.tmp-install/
+
+.tmp*/

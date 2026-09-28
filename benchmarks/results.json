@@ -1,0 +1,130 @@
+{
+  "configuration": {
+    "rows": 100000,
+    "iterations": 200,
+    "repetitions": 3,
+    "fixture_seed": 17,
+    "metric": "accuracy"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "runs": [
+    {
+      "seed": 500,
+      "tool_seconds": 9.98647180001717,
+      "baseline_seconds": 4.312854300020263,
+      "tool": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06630599999999998,
+        "ci_high": 0.07247350000000004,
+        "p": 0.004975124378109453
+      },
+      "independent_baseline": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06630599999999998,
+        "ci_high": 0.07247350000000004,
+        "p": 0.004975124378109453
+      }
+    },
+    {
+      "seed": 501,
+      "tool_seconds": 9.82034219999332,
+      "baseline_seconds": 4.647492899908684,
+      "tool": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06585975000000002,
+        "ci_high": 0.07139999999999991,
+        "p": 0.004975124378109453
+      },
+      "independent_baseline": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06585975000000002,
+        "ci_high": 0.07139999999999991,
+        "p": 0.004975124378109453
+      }
+    },
+    {
+      "seed": 502,
+      "tool_seconds": 10.264847000013106,
+      "baseline_seconds": 4.358266800059937,
+      "tool": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06624775000000004,
+        "ci_high": 0.07201525000000002,
+        "p": 0.004975124378109453
+      },
+      "independent_baseline": {
+        "accuracy_a": 0.91865,
+        "accuracy_b": 0.84961,
+        "delta": 0.06903999999999999,
+        "ci_low": 0.06624775000000004,
+        "ci_high": 0.07201525000000002,
+        "p": 0.004975124378109453
+      }
+    }
+  ],
+  "median_tool_seconds": 9.98647180001717,
+  "median_baseline_seconds": 4.358266800059937,
+  "fold_selection": {
+    "fold_scores": {
+      "a": [
+        0.9,
+        0.55,
+        0.9,
+        0.55,
+        0.9
+      ],
+      "b": [
+        0.75,
+        0.76,
+        0.77,
+        0.78,
+        0.79
+      ],
+      "c": [
+        0.61,
+        0.62,
+        0.63,
+        0.64,
+        0.65
+      ]
+    },
+    "naive_best_mean": 0.77,
+    "selection_adjusted": {
+      "alpha": 0.05,
+      "bootstrap": 500,
+      "ci_high": 0.79,
+      "ci_low": 0.55,
+      "invalid_draws": 17,
+      "limitations": [
+        "simplified fold-score implementation; no refitting or coverage guarantee"
+      ],
+      "method": "bbc_f_style_fold_selection",
+      "n_folds": 5,
+      "n_models": 3,
+      "point_estimate": 0.7232229123533471,
+      "seed": 0,
+      "valid_draws": 483
+    },
+    "independent_mean": 0.7232229123533471,
+    "seconds": 0.054366900003515184
+  },
+  "limits": [
+    "Synthetic IID correctness and runtime benchmark, not human time saved.",
+    "Baseline is specialized to accuracy and omits general validation/reporting; a tool speedup is not promised.",
+    "Fold bootstrap is a selection-aware estimate, not a guarantee of external performance."
+  ]
+}
